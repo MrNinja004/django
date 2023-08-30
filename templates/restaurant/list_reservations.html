@@ -1,0 +1,15 @@
+<!-- reservations/templates/reservations/list_reservations.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Reservations List</title>
+</head>
+<body>
+    <h1>Reservations List</h1>
+    <ul>
+        {% for reservation in reservations %}
+            <li>{{ reservation.name }} - {{ reservation.date }} at {{ reservation.time }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

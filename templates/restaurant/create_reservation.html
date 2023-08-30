@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HungersBay - Reservation page</title>
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+    <!--custom css link-->
+    <link rel="stylesheet" href="./style.css">
+    <!-- google font link-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Rubik:wght@400;500;600;700&family=Shadows+Into+Light&display=swap"
+    rel="stylesheet">
+    <!-- preload images-->
+    <link rel="preload" as="image" href="./images/hero-banner.png" media="min-width(768px)">
+    <link rel="preload" as="image" href="./images/hero-banner-bg.png" media="min-width(768px)">
+    <link rel="preload" as="image" href="./images/hero-bg.jpg">
+  </head>
+  <body id="top">
+    <div class="reservpage">
+      <div class="footer-top" style="background-image: url('./images/footer-illustration.png')">
+        <div class="container">
+          <div class="footer-brand">
+            <a href="" class="logo">HungersBay<span class="span">.</span></a>
+          </div>
+          <div class="reserv-form">
+            <form action="" class="footer-form1">
+              <p class="footer-list-title">Reserve your table here!</p>
+              <div class="input-wrapper"> 
+                <input type="text" name="full_name" required placeholder="Your UserName" aria-label="Your Name"
+                  class="input-field">
+                <input type="email" name="email_address" required placeholder="Email" aria-label="Email"
+                  class="input-field">
+              </div>
+              <div class="input-wrapper">
+                <select name="total_person" aria-label="Total person" class="input-field">
+                  <option value="person">Person</option>
+                  <option value="2 person">2 Person</option>
+                  <option value="3 person">3 Person</option>
+                  <option value="4 person">4 Person</option>
+                  <option value="5 person">5 Person</option>
+                </select>
+                <input type="date" name="birth_date" aria-label="Birthday date" class="input-field">
+              </div>
+              <textarea name="message" required placeholder="Message" aria-label="Message" class="input-field"></textarea>
+              <button type="submit" class="btn">Reserve</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="./script.js"></script>
+</body>
+</html>
